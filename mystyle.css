@@ -1,0 +1,140 @@
+.outerContainer {
+  background-color: rgba(255, 0, 0, 0);
+  height: 500px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.lineBallContainer {
+  background-color: rgba(159, 159, 159, 0);
+  height: 250px;
+
+  position: relative;
+  top: 2vh;
+}
+
+.ballAndLines {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.line {
+  height: 10px;
+  width: 500px;
+  background-color: rgb(71, 71, 71);
+}
+
+.lineLeft {
+  height: 50px;
+  width: 10px;
+  background-color: rgb(71, 71, 71);
+}
+
+.lineRight {
+  height: 50px;
+  width: 10px;
+  background-color: rgb(71, 71, 71);
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 30px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  linear-gradient(#444cf7 2px, transparent 2px), linear-gradient(90deg, #444cf7 2px, transparent 2px), linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(90deg, #444cf7 1px, #e5e5f7 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(23, 96, 81, 1) 40%, rgba(0, 212, 255, 1) 100%); */
+}
+
+
+.arrowButtonsContainer {
+  height: 250px;
+  width: 75px;
+  background-color: rgba(128, 128, 128, 0);
+  margin: 25px;
+  position: relative;
+  top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 100px;
+
+}
+.ejectButton {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 26px;
+  top: 18px;
+  border-radius: 50%;
+}
+
+.colorOnHover:hover {
+  width: 0;
+  height: 0;
+  transition: 300ms;
+  border-left: 30px solid rgba(255, 166, 0, 0);
+  border-right: 30px solid rgba(255, 255, 255, 0);
+  border-bottom: 30px solid rgb(123, 123, 123);
+  align-self: center;
+
+}
+
+.arrowButtonUP {
+  width: 0;
+  height: 0;
+  
+  border-left: 30px solid rgba(255, 166, 0, 0);
+  border-right: 30px solid rgba(0, 128, 0, 0);
+  border-bottom: 30px solid rgb(210, 210, 210);
+  align-self: center;
+}
+
+.arrowButtonDOWN {
+  width: 0;
+  height: 0;
+  border-left: 30px solid rgba(255, 166, 0, 0);
+  border-right: 30px solid rgba(0, 128, 0, 0);
+  border-bottom: 30px solid rgb(210, 210, 210);
+  transform: rotate(180deg);
+  align-self: center;
+}
+.arrowButtonLEFT {
+  width: 0;
+  height: 0;
+  border-left: 30px solid rgba(255, 166, 0, 0);
+  border-right: 30px solid rgba(0, 128, 0, 0);
+  border-bottom: 30px solid rgb(210, 210, 210);
+  transform: rotate(270deg);
+ 
+ position: absolute;
+ right: 55px;
+
+  
+}
+.arrowButtonRIGHT {
+  width: 0;
+  height: 0;
+  border-left: 30px solid rgba(255, 166, 0, 0);
+  border-right: 30px solid rgba(0, 128, 0, 0);
+  border-bottom: 30px solid rgb(210, 210, 210);
+  transform: rotate(90deg);
+
+  align-self: center;
+  position: absolute;
+  left: 55px;
+}
+
